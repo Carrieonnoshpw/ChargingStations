@@ -12,8 +12,7 @@ threshold = 20000
 # Determine the number of runs
 num_runs = 10
 
-#df = pd.read_csv('data/Nodes_CD6huan.csv') 
-df = pd.read_csv(r'D:\Users\jsj\ArcGISpro\Station\test_nodes.csv')
+df = pd.read_csv('data/Nodes_CD6huan.csv') 
 # Use KDTree to build a spatial index
 tree = KDTree(df[["cgcs_x","cgcs_y"]].values)
 
