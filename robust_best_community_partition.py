@@ -7,7 +7,7 @@ from scipy.spatial import KDTree
 import community as community_louvain
 from sklearn.metrics import adjusted_rand_score
 
-df = pd.read_csv('data/Nodes_CD6huan.csv') 
+df = pd.read_csv('Nodes_CD6huan.csv') 
 
 # Construct a spatial index using KDTree
 tree = KDTree(df[["cgcs_x","cgcs_y"]].values)
